@@ -1,3 +1,4 @@
+
 import React, { useState,useEffect, useContext } from 'react'
 import './selection.css'
 import Searchcontext from '../Context/Searchcontext'
@@ -22,7 +23,7 @@ const Selection = ({movie}) => {
                 {
                     results.map((itemm) => {
                         return <div key={itemm.id} className='card'>
-                            <img src={`https://image.tmdb.org/t/p/w200${itemm.poster_path}`} alt={itemm.poster_path} />
+                            <img src={`https://image.tmdb.org/t/p/w500${itemm.poster_path}`} alt="" />
                             <div className='info'>
                                 <div>
                                     <p className='sınır'>{itemm.overview}</p>
