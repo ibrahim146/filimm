@@ -1,0 +1,178 @@
+.navbarr{
+  color: white;
+}
+.mySwiper {
+    height: 700px;
+    margin-top: 5px;
+    display: flex;
+  
+    gap: 4px;
+  }
+  
+  .mySwiper img {
+  
+    object-fit: cover;
+  }
+  
+  .moviedetail {
+    width: 700px;
+    height: 550px;
+    z-index: 50;
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: 300px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .btnns{
+    padding-left: 10px;
+    font-weight: bold;
+    color: red;
+    cursor:pointer;
+    font-size: 35px;
+  }
+  .btnns:hover{
+    
+    font-weight: bold;
+    color: white;
+    font-size: 35px;
+  }
+  
+  @media screen and (max-width:1400px) {
+    .moviedetail {
+      max-width: 300px;
+      right: 400px;
+    }
+  }
+  
+  @media screen and (max-width:1210px) {
+    .moviedetail {
+      max-width: 300px;
+      right: 300px;
+    }
+  }
+  
+  @media screen and (max-width:1125px) {
+    .moviedetail {
+      max-width: 300px;
+      right: 100px;
+    }
+  }
+  @media screen and (max-width:806px) {
+    .moviedetail {
+      max-width: 200px;
+      right: 70px;
+    }
+  }
+  
+  
+  @media screen and (max-width:916px) {
+    .mySwiper img {
+      width: 400px;
+  
+    }
+  }
+  
+  @media screen and (max-width:670px) {
+    .mySwiper img {
+      width: 100%;
+      height: 800px;
+    }
+  }
+  @media screen and (max-width:722px) {
+    .moviedetail {
+      
+      max-width: 200px;
+      right: 50px;
+    }
+  }
+  @media screen and (max-width:670px) {
+    .moviedetail {
+      width: 100%;
+      font-size: 20px;
+      color: white; 
+       position: absolute;
+      top: 300px;
+      right: 200px;
+   
+    }
+  
+    .moviedetail .asd .acıklama{
+      display: none;
+    }
+    .moviedetail .asd h3{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+  }
+  @media screen and (max-width:651px){
+      .moviedetail{
+        width: 100%;
+        font-size: 20px;
+        color: white; 
+         position: absolute;
+        top: 300px;
+        right:200px;
+      
+      }
+  }
+  
+  @media screen and (max-width:550px){
+    .moviedetail{
+      width: 100%;
+      font-size: 20px;
+      color: white; 
+       position: absolute;
+      top: 300px;
+      right:130px;
+    
+    }
+  }
+  @media screen and (max-width:450px){
+    .moviedetail{
+      width: 100%;
+      font-size: 20px;
+      color: white; 
+       position: absolute;
+      top: 300px;
+      right:100px;
+    
+    }
+  }
+  @media screen and (max-width:400px){
+    .moviedetail{
+      width: 100%;
+      font-size: 20px;
+      color: white; 
+       position: absolute;
+      top: 300px;
+      right:40px;
+    
+    }
+  }
+  @media screen and (max-width:400px){
+    .moviedetail{
+      width: 100%;
+      font-size: 20px;
+      color: white; 
+       position: absolute;
+      top: 300px;
+      right:60px;
+    
+    }
+  }@media screen and (max-width:350px){
+    .moviedetail{
+      width: 100%;
+      font-size: 20px;
+      color: white; 
+       position: absolute;
+      top: 300px;
+      right:40px;
+    
+    }
+  }

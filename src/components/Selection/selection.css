@@ -1,0 +1,147 @@
+.wrapper {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+
+}
+
+.card {
+    font-weight: bold;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    width: 250px;
+    height: 340px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(10px);
+
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0.176.155.0.5), rgba(150, 201, 61, 1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 1;
+}
+
+.card:hover:before {
+    opacity: 1;
+}
+
+.card img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card .info {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+.card:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.sınır {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.btnnn {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+
+.btnn {
+    cursor:pointer;
+    font-weight: bold;
+    color: red;
+    font-size: 30px;
+
+
+}
+
+.btnn:hover {
+    color: white;
+    font-size: 30px;
+}
+
+@media screen and (max-width:1127px) {
+    .card {
+        width: 180px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:1097px) {
+    .card {
+        width: 180px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:890px) {
+    .card {
+        width: 160px;
+        height: 250px;
+
+    }
+
+    .sınır {
+        display: none;
+    }
+}
+
+@media screen and (max-width:794px) {
+    .card {
+        width: 150px;
+        height: 220px;
+    }
+}
+
+@media screen and (max-width:716px) {
+    .card {
+        width: 140px;
+        height: 220px;
+        overflow: hidden;
+    }
+
+
+
+}
