@@ -6,7 +6,7 @@ const Selection = ({movie}) => {
     const {favorilere_ekle} = useContext(GlobalContext);
     const search = useContext(Searchcontext);
     const {favorilere_silme_izleneceklere_ekle} = useContext(GlobalContext);
-    const [results,setresult] = useState([])
+    const [results,setresult] = useState([]);
     
    
     useEffect(() => {
@@ -15,7 +15,7 @@ const Selection = ({movie}) => {
             .then((res) => res.json())
             .then((data) => { setresult(data.results) })
             
-    }, [])
+    }, [search])
     return (
         <div className='alan'>
             <div className='wrapper'>
