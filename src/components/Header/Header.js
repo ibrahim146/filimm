@@ -1,26 +1,27 @@
-import React, { useContext, useState } from 'react'
+import React, {  useContext, useState } from 'react'
 import logo from "../../img/yaskagroup.png";
 import {  Routes, Route, Link } from "react-router-dom";
 import Carusel from '../Carusel/Carusel';
 import Favori from '../favori/Favori.js';
-import Searchcontext from '../Context/Searchcontext';
+
 import Selection from '../Selection/Selection';
 import İzlenecekler from "../izlenecekler/İzlenecekler";import Tvsovları from '../Tvsovları/Tvsovları';
 import Date2022 from '../date/Date2022';
 import Date2021 from '../date/Date2021';
 import Date2020 from '../date/Date2020';
 import Date2019 from '../date/Date2019';
-;
+import Searchcontext from '../Context/Searchcontext';
+
 
 
 const Header = () => {
-    
-    const {search , setsearch} = useContext(Searchcontext);
+   
+    const  {search ,setsearch} = useContext(Searchcontext);
     const [ setresult] = useState([]);
    
     function onchange(e) {
         
-        setsearch(e.target.value)
+       setsearch(e.target.value)
         
         fetch(`https://api.themoviedb.org/3/search/movie?api_key=b1daa7db24dab8feedb3d1004e6a8a90&language=tr-tr&page=1&include_adult=false&query=${search}`)
             .then((res) => res.json())
@@ -79,7 +80,7 @@ const Header = () => {
            
                 <Carusel />
                 <Routes>
-                    <Route  path='/' element={<Selection />} />
+                    <Route  path='/' element={<Selection movie={search} />} />
                     <Route exact path='/favori' element={<Favori />} />
                     <Route exact path='/izlenenler' element={<İzlenecekler />} />
                     <Route exact path='/tv_sovları' element={<Tvsovları />} />
