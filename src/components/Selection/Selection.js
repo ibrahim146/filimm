@@ -22,7 +22,7 @@ const Selection = ({movie}) => {
                 {
                     results.map((itemm) => {
                         return <div key={itemm.id} className='card'>
-                            <img src={`https://image.tmdb.org/t/p/w500${itemm.poster_path}`} alt="" />
+                            <img src={`https://image.tmdb.org/t/p/w300${itemm.backdrop_path}`} alt="" />
                             <div className='info'>
                                 <div>
                                     <p className='sınır'>{itemm.overview}</p>
