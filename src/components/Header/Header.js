@@ -5,7 +5,8 @@ import Carusel from '../Carusel/Carusel';
 import Favori from '../favori/Favori.js';
 
 import Selection from '../Selection/Selection';
-import İzlenecekler from "../izlenecekler/İzlenecekler";import Tvsovları from '../Tvsovları/Tvsovları';
+import İzlenecekler from "../izlenecekler/İzlenecekler";
+import Tvsovları from '../Tvsovları/Tvsovları';
 import Date2022 from '../date/Date2022';
 import Date2021 from '../date/Date2021';
 import Date2020 from '../date/Date2020';
@@ -38,7 +39,7 @@ const Header = () => {
         <>
             <nav className="navbar navbar-expand-lg bg-black">
                 <div className="container-fluid text-white">
-                    <Link className="navbar-brand text-danger" to="http://localhost:3000/"><img className='logoimage' src={logo} alt="" /> YASKA FİLİM</Link>
+                    <Link className="navbar-brand text-danger" to="/"><img className='logoimage' src={logo} alt="" /> YASKA FİLİM</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon bg-danger"></span>
                     </button>
