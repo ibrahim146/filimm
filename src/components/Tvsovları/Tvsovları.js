@@ -7,7 +7,7 @@ const Tvsovları = () => {
     const [results, setresult] = useState([])
     useEffect(() => {
 
-        fetch(`https://api.themoviedb.org/3/movie/popular?api_key=b1daa7db24dab8feedb3d1004e6a8a90&language=tr-tr&page=20`)
+        fetch(`https://api.themoviedb.org/3/movie/popular?api_key=b1daa7db24dab8feedb3d1004e6a8a90&language=tr-tr&page=8`)
             .then((res) => res.json())
             .then((data) => { setresult(data.results) });
             
